@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Trushdex';
+    src: url('/public/assets/font/Trushdex.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Preospe';
+    src: url('https://cdn.rlss.in.th/assets/font/Preospe.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.Trushdex-font {
+    font-family: 'Trushdex', sans-serif;
+}
+.Preospe-font {
+    font-family: 'Preospe', sans-serif;
+}
