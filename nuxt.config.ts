@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     },
     css: ["/public/assets/css/tailwind.css"],
     routeRules: {
-      // prerender index route by default
       '/': { prerender: true, cors: true },
       '/*': { cors: true },
     },
