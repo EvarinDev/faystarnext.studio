@@ -14,3 +14,24 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: '🚀 | FAYStarNext'
+})
+useSeoMeta({
+  title: '🚀 | FAYStarNext',
+  description: '🚀 | FAYStarNext',
+  keywords: 'AnalyticNight',
+  ogImage: 'https://cdn.rlss.in.th/assets/img/BackGround.webp',
+  ogUrl: 'https://analyticnight.rlss.in.th',
+  ogType: 'website',
+  ogTitle: '🚀 | FAYStarNext',
+  ogDescription: "Hi 👋 My name is FAY",
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'AnalyticNight - Home',
+  twitterDescription: 'AnalyticNight - Home',
+  twitterImage: 'https://cdn.rlss.in.th/assets/img/BackGround.webp',
+})
+
+</script>
