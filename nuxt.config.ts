@@ -8,7 +8,6 @@ export default defineNuxtConfig({
           lang: "en-US",
         },
         title: '🚀 | FAYStarNext',
-        
         link: [
           { rel: 'icon', href: 'https://cdn.rlss.in.th/profile/vtube/7255b71064ecf98bcee2ac98e679f498.png' }
         ],
