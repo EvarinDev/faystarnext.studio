@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     },
     modules: ["@nuxtjs/tailwindcss", '@nuxt/image', "@nuxtjs/sitemap", "nuxt-gtag", "@nuxtjs/robots"],
     gtag: {
-      id: "",
+      id: "G-BPMPTZD5MZ",
     },
     postcss: {
       plugins: {

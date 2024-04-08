@@ -22,15 +22,15 @@ useHead({
 useSeoMeta({
   title: '🚀 | FAYStarNext',
   description: '🚀 | FAYStarNext',
-  keywords: 'AnalyticNight',
+  keywords: 'FAYStarNext',
   ogImage: 'https://cdn.rlss.in.th/assets/img/BackGround.webp',
-  ogUrl: 'https://analyticnight.rlss.in.th',
+  ogUrl: 'https://faystarnext.studio',
   ogType: 'website',
   ogTitle: '🚀 | FAYStarNext',
   ogDescription: "Hi 👋 My name is FAY",
   twitterCard: 'summary_large_image',
-  twitterTitle: 'AnalyticNight - Home',
-  twitterDescription: 'AnalyticNight - Home',
+  twitterTitle: '🚀 | FAYStarNext',
+  twitterDescription: '🚀 | FAYStarNext',
   twitterImage: 'https://cdn.rlss.in.th/assets/img/BackGround.webp',
 })
 
