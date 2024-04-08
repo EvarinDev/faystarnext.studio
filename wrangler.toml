@@ -1,0 +1,6 @@
+main = "./.output/server/index.mjs"
+workers_dev = false
+compatibility_date = "2022-04-05"
+account_id = "181bdf264b0e58309f1244f8c86d316d"
+[site]
+bucket = ".output/public"
