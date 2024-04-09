@@ -10,7 +10,7 @@
         <h1 class="text-2xl Trushdex-font ">Hello, Everyone</h1>
         <p class="Trushdex-font text-lg">Hi 👋 My name is Fay</p>
         <div class="flex flex-wrap justify-center items-center">
-          <a href="https://github.com/FAYStarNext">
+          <a href="https://github.com/FAYStarNext" aria-label="GitHub">
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd"
@@ -18,7 +18,7 @@
                 clip-rule="evenodd" />
             </svg>
           </a>
-          <a href="https://discord.com/users/395597735174340611">
+          <a href="https://discord.com/users/395597735174340611" aria-label="Discord">
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path
