@@ -8,9 +8,9 @@
         <h1 class="text-2xl mb-2">{{ $t("popup.title") }}</h1>
         <a href="https://ezdn.app/FAYStarNext" class="text-lg">{{ $t("popup.content") }}</a>
         <div>
-          <div class="mt-8">
+          <div class="mt-1">
             <button @click="showModal = false"
-              class="px-4 py-2 bg-blue-500 dark:bg-white text-white dark:text-neutral-950 dark:hover:text-blue-600 rounded-lg">Close</button>
+              class="mt-4 px-4 py-2 bg-blue-500 text-white dark:text-neutral-950 dark:hover:text-neutral-800 rounded-lg">Close</button>
           </div>
         </div>
       </div>
@@ -26,6 +26,7 @@
       <div class="flex flex-col items-center justify-center h-screen text-center">
         <h1 class="text-2xl Trushdex-font ">Hello, Everyone</h1>
         <p class="Trushdex-font text-lg">Hi 👋 My name is Fay</p>
+        <p class="Trushdex-font text-lg">Contact Me: faystarnext@gmail.com and Discord</p>
         <div class="flex flex-wrap justify-center items-center">
           <a href="https://github.com/FAYStarNext" aria-label="GitHub">
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"

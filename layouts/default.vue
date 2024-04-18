@@ -1,6 +1,5 @@
 <template>
     <div :class="locale === 'th' ? 'anuphan' : 'readex'" class="dark:bg-neutral-800 dark:text-white">
-        <Navbar />
         <main :class="locale === 'th' ? 'anuphan' : 'readex'">
             <NuxtPage />
         </main>
