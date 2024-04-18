@@ -22,5 +22,10 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4"
+  },
+  "resolutions": {
+    "string-width": "4.1.0",
+    "jackspeak": "2.3.5",
+    "strip-ansi": "5.2.0"
   }
 }
