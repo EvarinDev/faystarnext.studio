@@ -1,5 +1,22 @@
 <template>
-  <div class="">
+  <div>
+    <div v-if="showModal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 text-neutral-800 dark:text-white">
+      <div class="bg-white dark:bg-neutral-800 p-4 rounded-lg">
+        <img class="mb-2" src="https://bucket.rlss.in.th/assets/img/PoPUP.png" alt="PoP"
+          style="transform: rotate(0deg);">
+        <h1 class="text-2xl mb-2">{{ $t("popup.title") }}</h1>
+        <a href="https://ezdn.app/FAYStarNext" class="text-lg">{{ $t("popup.content") }}</a>
+        <div>
+          <div class="mt-8">
+            <button @click="showModal = false"
+              class="px-4 py-2 bg-blue-500 dark:bg-white text-white dark:text-neutral-950 dark:hover:text-blue-600 rounded-lg">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
     <div class="dark:bg-neutral-800 text-white" :style="{
       background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.rlss.in.th/assets/img/BackGround.webp)`,
       backgroundSize: 'cover',
@@ -32,6 +49,12 @@
 </template>
 
 <script setup>
+const showModal = ref(false);
+
+onMounted(() => {
+  showModal.value = true;
+});
+
 useHead({
   title: '🚀 | FAYStarNext'
 })

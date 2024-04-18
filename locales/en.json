@@ -1,0 +1,12 @@
+{
+    "memu": {
+        "title_home": "Home",
+        "title_about": "About",
+        "title_project": "Project",
+        "title_contact": "Contact"
+    },
+    "popup": {
+        "title": "Hi!",
+        "content": "Welcome to my Profile! (Donate ME PLS!)"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "memu": {
+        "title_home": "หน้าหลัก",
+        "title_about": "เกี่ยวกับเรา",
+        "title_project": "โปรเจค",
+        "title_contact": "ติดต่อเรา"
+    },
+    "popup": {
+        "title": "สวัสดีครับ",
+        "content": "ยินดีต้อนรับสู่ Profile ของฉัน (Donate ME PLS)"
+    }
+}
