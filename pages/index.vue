@@ -1,22 +1,5 @@
 <template>
   <div>
-    <div v-if="showModal"
-      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 text-neutral-800 dark:text-white">
-      <div class="bg-white dark:bg-neutral-800 p-4 rounded-lg">
-        <img class="mb-2" src="https://bucket.rlss.in.th/assets/img/PoPUP.png" alt="PoP"
-          style="transform: rotate(0deg);">
-        <h1 class="text-2xl mb-2">{{ $t("popup.title") }}</h1>
-        <a href="https://ezdn.app/FAYStarNext" class="text-lg">{{ $t("popup.content") }}</a>
-        <div>
-          <div class="mt-1">
-            <button @click="showModal = false"
-              class="mt-4 px-4 py-2 bg-blue-500 text-white dark:text-neutral-950 dark:hover:text-neutral-800 rounded-lg">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-    </div>
     <div class="dark:bg-neutral-800 text-white" :style="{
       background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.rlss.in.th/assets/img/BackGround.webp)`,
       backgroundSize: 'cover',
@@ -41,6 +24,13 @@
               width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path
                 d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+            </svg>
+          </a>
+          <a href="https://easydonate.app/FAYStarNext" aria-label="DONATE ME PLS">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z" />
             </svg>
           </a>
         </div>
