@@ -8,9 +8,17 @@ const props = defineProps({
 
 
 <template>
-    <Navbar />
-    <div class="flex flex-col items-center justify-center h-screen text-center">
-      <h1 class="text-4xl mb-4">{{ error.statusCode }}</h1>
-      <router-link to="/" class="text-blue-700 dark:text-white">Back to Home</router-link>
+  <div>
+    <div class="dark:bg-neutral-800 text-white" :style="{
+      background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.rlss.in.th/assets/img/BackGround.webp)`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+    }">
+      <div class="flex flex-col items-center justify-center h-screen text-center">
+        <h1 class="text-2xl Trushdex-font ">{{ error?.statusCode }}</h1>
+        <p class="text-lg">{{ error?.message }}</p>
+      </div>
     </div>
-  </template>
+  </div>
+</template>
