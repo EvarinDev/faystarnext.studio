@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="dark:bg-neutral-800 text-white" :style="{
-      background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/Ocean.gif)`,
+      background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/00018.png)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
