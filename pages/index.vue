@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="dark:bg-neutral-800 text-white" :style="{
-      background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/00018.png)`,
+      background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.rlss.in.th/assets/img/BackGround.webp)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
