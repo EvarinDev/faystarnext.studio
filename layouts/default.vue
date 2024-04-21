@@ -3,7 +3,6 @@
         <main :class="locale === 'th' ? 'anuphan' : 'readex'">
             <NuxtPage />
         </main>
-
     </div>
 </template>
 <script setup>

@@ -734,6 +734,23 @@
   resolved "https://registry.npmjs.org/@kwsites/promise-deferred/-/promise-deferred-1.1.1.tgz"
   integrity sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==
 
+"@leanera/nuxt-i18n@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@leanera/nuxt-i18n/-/nuxt-i18n-0.5.0.tgz#530d76fb521cfb0476d05994087e2cd295934d74"
+  integrity sha512-Dwp+aKmqrqMXw1s8KJW4uwdfugnOPRYg/c029XV5pq8jwmb5wMLlTA5w+PRYSmcLpM5WbV9SV8t3kV0U+4Olvg==
+  dependencies:
+    "@leanera/vue-i18n" "^0.5.0"
+    "@nuxt/kit" "^3.5.1"
+    knitwork "^1.0.0"
+    pathe "^1.1.0"
+
+"@leanera/vue-i18n@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@leanera/vue-i18n/-/vue-i18n-0.5.0.tgz#50ad39e177b1bddfb37ae356e9ac03a57acaac20"
+  integrity sha512-2Vww6cgibXj0ZKu+Eb7ZGMV/w3j8itkJv+9ai7GkHltUC5X+bQYaBYIJp0dNqHujqLgkZXxWSrDHeGqtt0eWBg==
+  dependencies:
+    klona "^2.0.6"
+
 "@mapbox/node-pre-gyp@^1.0.5":
   version "1.0.11"
   resolved "https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.11.tgz"
@@ -998,7 +1015,7 @@
   optionalDependencies:
     ipx "^2.1.0"
 
-"@nuxt/kit@3.11.2", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.11.1", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.8.2", "@nuxt/kit@^3.9.3":
+"@nuxt/kit@3.11.2", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.10.2", "@nuxt/kit@^3.10.3", "@nuxt/kit@^3.11.1", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.5.1", "@nuxt/kit@^3.8.2", "@nuxt/kit@^3.9.3":
   version "3.11.2"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.11.2.tgz"
   integrity sha512-yiYKP0ZWMW7T3TCmsv4H8+jEsB/nFriRAR8bKoSqSV9bkVYWPE36sf7JDux30dQ91jSlQG6LQkB3vCHYTS2cIg==

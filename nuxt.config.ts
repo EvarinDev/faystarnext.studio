@@ -40,24 +40,12 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ["@nuxtjs/tailwindcss", '@nuxt/image', "@nuxtjs/sitemap", "nuxt-gtag", "@nuxtjs/robots", "@nuxtjs/i18n"],
+  modules: ["@nuxtjs/tailwindcss", '@nuxt/image', "@nuxtjs/sitemap", "nuxt-gtag", "@nuxtjs/robots", "@leanera/nuxt-i18n"],
   i18n: {
-    locales: [
-      {
-        code: "en",
-        iso: "en-US",
-        name: "English",
-        domain: "/en",
-      },
-      {
-        code: "th",
-        iso: "th-TH",
-        name: "ไทย",
-        domain: "/th",
-      },
-    ],
-    defaultLocale: "en",
-    vueI18n: "./i18n.config.ts",
+    locales: ['en', 'th'],
+    defaultLocale: 'en',
+    strategy: 'prefix_and_default',
+    langImports: true,
   },
   gtag: {
     id: "G-BPMPTZD5MZ",
