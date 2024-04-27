@@ -10,8 +10,6 @@
         <h1 class="text-2xl Trushdex-font ">Hello, Everyone</h1>
         <p class="Trushdex-font text-lg">Hi 👋 My name is Fay</p>
         <p class="Trushdex-font text-lg">I'm a Back-end Developer</p>
-        <p class="text-lg">{{ $t("Adv") }}</p>
-        <p class="text-lg">faystarnext@gmail.com {{ $t("Contact") }} Discord: faystarnext</p>
         <div class="flex flex-wrap justify-center items-center">
           <a href="https://github.com/FAYStarNext" aria-label="GitHub">
             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
