@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import * as React from "react";
 import { Metadata } from 'next';
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export const metadata: Metadata = {
   title: '🚀 | FAYStarNext',
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Component {...pageProps} />
+    <>
+    <GoogleAnalytics trackPageViews key="G-BPMPTZD5MZ" gaMeasurementId="G-BPMPTZD5MZ" />
+      <Component {...pageProps} />
+    </>
   );
 }
