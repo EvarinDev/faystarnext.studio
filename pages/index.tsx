@@ -1,22 +1,29 @@
+import { Metadata } from "next";
 import Head from "next/head";
+
+export const metadata: Metadata = {
+  title: '🚀 | FAYStarNext',
+  description: '🚀 | FAYStarNext',
+  keywords: 'FAYStarNext',
+  openGraph: {
+    images: ["https://cdn.rlss.in.th/assets/img/BackGround.webp"],
+    type: 'website',
+    title: '🚀 | FAYStarNext',
+    description: 'Hi 👋 My name is FAY',
+    url: 'https://faystarnext.studio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '🚀 | FAYStarNext',
+    description: '🚀 | FAYStarNext',
+    images: 'https://cdn.rlss.in.th/assets/img/BackGround.webp',
+  }
+};
 
 export default function Home() {
   return (
     <div>
-      <head>
-        <meta name="title" content="🚀 | FAYStarNext" />
-        <meta name="description" content="Hi 👋 My name is FAY" />
-        <meta name="keywords" content="FAYStarNext" />
-        <meta property="og:image" content="https://cdn.rlss.in.th/assets/img/BackGround.webp" />
-        <meta property="og:url" content="https://faystarnext.studio" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="🚀 | FAYStarNext" />
-        <meta property="og:description" content="Hi 👋 My name is FAY" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="🚀 | FAYStarNext" />
-        <meta name="twitter:description" content="🚀 | FAYStarNext" />
-        <meta name="twitter:image" content="https://cdn.rlss.in.th/assets/img/BackGround.webp" />
-      </head>
+      <title>🚀 | FAYStarNext</title>
       <div className="dark:bg-neutral-800 text-white" style={{
         background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url(https://cdn.rlss.in.th/assets/img/BackGround.webp)`,
         backgroundSize: 'cover',
