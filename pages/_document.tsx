@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="title" content="🚀 | FAYStarNext" />
-        <meta name="description" content="🚀 | FAYStarNext" />
+        <meta name="description" content="Hi 👋 My name is FAY" />
         <meta name="keywords" content="FAYStarNext" />
         <meta property="og:image" content="https://cdn.rlss.in.th/assets/img/BackGround.webp" />
         <meta property="og:url" content="https://faystarnext.studio" />
