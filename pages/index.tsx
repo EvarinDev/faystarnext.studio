@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center h-screen text-center">
         <h1 className="text-2xl Trushdex-font ">Hello, Everyone</h1>
         <p className="Trushdex-font text-lg">Hi 👋 My name is Fay</p>
-        <p className="Trushdex-font text-lg">I'm a Back-end Developer</p>
+        <p className="Trushdex-font text-lg">I&apos;m a Back-end Developer</p>
         <div className="flex flex-wrap justify-center items-center">
           <a href="https://github.com/FAYStarNext" aria-label="GitHub">
             <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
