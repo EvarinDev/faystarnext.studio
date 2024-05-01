@@ -12,8 +12,9 @@ export default function About() {
                     <h1 className="text-2xl Trushdex-font ">About👋</h1>
                     <p className="Trushdex-font text-lg">Name: FAY</p>
                     <p className="Trushdex-font text-lg">Age: ???</p>
-                    
-                    <p className="Trushdex-font text-lg">I soo Noobb</p>
+                    <p className="Trushdex-font text-lg">Location: Thailand</p>
+                    <p className="Trushdex-font text-lg">Position: Back-end Developer</p>
+                    <p className="Trushdex-font text-lg">I Sooo Noobb</p>
                 </div>
             </div>
         </div>
