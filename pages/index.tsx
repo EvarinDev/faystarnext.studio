@@ -1,27 +1,6 @@
 import GithubIcon from "@/components/GithubIcon";
-import { Metadata } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: '🚀 | FAYStarNext',
-  description: '🚀 | FAYStarNext',
-  keywords: 'FAYStarNext',
-  openGraph: {
-    images: ["https://cdn.rlss.in.th/assets/img/BackGround.webp"],
-    type: 'website',
-    title: '🚀 | FAYStarNext',
-    description: 'Hi 👋 My name is FAY',
-    url: 'https://faystarnext.studio',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '🚀 | FAYStarNext',
-    description: '🚀 | FAYStarNext',
-    images: 'https://cdn.rlss.in.th/assets/img/BackGround.webp',
-  }
-};
 
 export default function Page() {
   const skills = [

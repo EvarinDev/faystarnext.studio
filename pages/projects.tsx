@@ -1,7 +1,7 @@
 import DiscordIcon from "@/components/DiscordIcon";
 import EarthIcon from "@/components/EarthIcon";
 import GithubIcon from "@/components/GithubIcon";
-import { Button, Card, CardFooter, CardHeader, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 
 export default function Projects() {
     const projects = [
