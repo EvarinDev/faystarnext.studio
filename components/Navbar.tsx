@@ -28,7 +28,7 @@ export default function NextNavbar() {
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     {menuItems.map((item, index) => (
-                        <NavbarItem>
+                        <NavbarItem key={index}>
                             <Link
                                 href={item.url}
                             >
@@ -42,7 +42,7 @@ export default function NextNavbar() {
                 </NavbarContent>
                 <NavbarMenu>
                     {menuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item}-${index}`} className="">
+                        <NavbarMenuItem key={index}>
                             <Link
                                 className="block py-2 px-3 transition md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
                                 href={item.url}

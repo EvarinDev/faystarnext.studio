@@ -1,6 +1,7 @@
 import GithubIcon from "@/components/GithubIcon";
 import { Metadata } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -77,7 +78,7 @@ export default function Page() {
         <div className="flex flex-wrap justify-center items-center">
           {skills.map((item) => (
             <div key={item.title} className="flex flex-col items-center m-2">
-              <img src={item.icon} alt={item.title} className="w-16 h-16" />
+              <Image src={item.icon} alt={item.title} width={64} height={64} />
               <p>{item.title}</p>
             </div>
           ))}
