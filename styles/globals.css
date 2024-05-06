@@ -1,12 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
 @font-face {
   font-family: 'Trushdex';
   src: url('/fonts/Trushdex.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Readex Pro';
+  src: url('/fonts/ReadexPro.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,29 +28,6 @@
 .Preospe-font {
   font-family: 'Preospe', sans-serif;
 }
-
-.readex {
-    font-family: "Readex Pro", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "HEXP" 0;
-}
-
-.anuphan {
-    font-family: "Anuphan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.page-enter-active,
-.page-leave-active {
-    transition: all 0.4s;
-}
-
-.page-enter-from,
-.page-leave-to {
-    opacity: 0;
-    filter: blur(1rem);
+.ReadexPro-font {
+  font-family: 'Readex Pro', sans-serif;
 }
