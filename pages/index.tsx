@@ -32,7 +32,12 @@ export default function Page() {
   return (
     <div>
       <title>🚀 | FAYStarNext</title>
-      <div className="bg-white text-neutral-950">
+      <div className="bg-white text-neutral-950" style={{
+      background: `linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.1)), url()`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+    }}>
         <div className="flex flex-col items-center justify-center h-screen text-center">
           <h1 className="text-2xl ReadexPro-font">Hello, Everyone</h1>
           <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>

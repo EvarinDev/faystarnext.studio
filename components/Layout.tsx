@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <>
+        <div>
             <Head>
                 <title>🚀 | FAYStarNext</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </Head>
             <NextNavbar />
             <main>{children}</main>
-        </>
+        </div>
     )
 }
