@@ -41,7 +41,7 @@ export default function NextNavbar() {
                         </NavbarItem>
                     ))}
                 </NavbarContent>
-                <NavbarContent  className="sm:hidden" justify="end">
+                <NavbarContent className="sm:hidden" justify="end">
                     <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                 </NavbarContent>
                 <NavbarMenu>
