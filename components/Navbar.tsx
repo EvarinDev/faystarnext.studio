@@ -15,6 +15,10 @@ export default function NextNavbar() {
         {
             title: "Projects",
             url: "/projects",
+        },
+        {
+            title: "Contact",
+            url: "/contact",
         }
     ];
 

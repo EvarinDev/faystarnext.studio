@@ -21,34 +21,36 @@ export default function Page() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
     },
     {
-      title: "Linux",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-    },
-    {
       title: "Next.js",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+    },
+    {
+      title: "Linux",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
     }
   ]
   return (
     <div>
-      <title>🚀 | FAYStarNext</title>
       <div className="bg-white text-neutral-950">
-        <div className="flex flex-col items-center justify-center h-screen text-center">
-          <h1 className="text-2xl ReadexPro-font">Hello, Everyone</h1>
-          <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
-          <p className="ReadexPro-font text-lg">I&apos;m a Back-end Developer</p>
-          <p className="ReadexPro-font text-lg">Locations: Thailand</p>
-          <div className="flex flex-wrap justify-center items-center">
-            <Link href="https://github.com/FAYStarNext" aria-label="GitHub">
-              <GithubIcon />
-            </Link>
-            <Link href="https://github.com/sponsors/FAYStarNext" aria-label="DONATE ME PLS">
-              <svg className="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                  d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z" />
-              </svg>
-            </Link>
+        <div className="flex flex-row-reverse h-screen items-center">
+          <div className="justify-end w-4/12">
+              <h1 className="text-2xl ReadexPro-font">Hello, Everyone</h1>
+              <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
+              <p className="ReadexPro-font text-lg">I&apos;m a Back-end Developer</p>
+              <p className="ReadexPro-font text-lg">Locations: Thailand</p>
+              <p className="ReadexPro-font text-lg">I MAKE EASY PROJECTS</p>
+              <div className="flex flex-wrap items-center">
+                <Link href="https://github.com/FAYStarNext" aria-label="GitHub">
+                  <GithubIcon />
+                </Link>
+                <Link href="https://github.com/sponsors/FAYStarNext" aria-label="DONATE ME PLS">
+                  <svg className="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z" />
+                  </svg>
+                </Link>
+            </div>
           </div>
         </div>
       </div>
