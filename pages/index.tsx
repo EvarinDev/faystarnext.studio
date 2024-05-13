@@ -128,7 +128,7 @@ export default function Page() {
             <div className="flex flex-wrap justify-center items-center">
               {skills.map((item) => (
                 <div key={item.title} className="flex flex-col items-center m-2">
-                  <Image src={item.icon} alt={item.title} width={64} height={64} />
+                  <Image src={item.icon} alt={item.title} width={64} height={64} fetchPriority="high" />
                   <p>{item.title}</p>
                 </div>
               ))}

@@ -42,7 +42,7 @@ export default function Projects() {
                             className="border bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4 flex flex-col items-center m-2"
                             key={item.title}
                         >
-                            <Image src={item.icon} alt="Avatar" className="w-32 h-32 rounded-full" />
+                            <Image src={item.icon} alt="Avatar" className="w-32 h-32 rounded-full" fetchPriority="high"/>
                             <div className="mt-4 text-center">
                                 <h2 className="text-xl font-bold text-gray-700">{item.title}</h2>
                                 <p className="text-gray-600">{item.type}</p>
