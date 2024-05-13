@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import Loading from "@/components/loading";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import NextNavbar from "../components/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
