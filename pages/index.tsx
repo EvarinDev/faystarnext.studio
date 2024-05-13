@@ -42,14 +42,43 @@ export default function Page() {
       });
     }
   };
+  const words = "I MAKE EASY PROJECTS".split(" ");
+
+  const container = {
+    hidden: { opacity: 0 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
+    }),
+  };
+  const child = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: 20,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+  };
 
   return (
     <div>
       <div className="bg-white text-white" style={{
-         background: `linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.2)), url()`,
-         backgroundSize: 'cover',
-         backgroundPosition: 'center center',
-         backgroundRepeat: 'no-repeat',
+        background: `linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/20230806_151743.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}>
         <div className="flex flex-row-reverse h-screen items-center">
           <div className="justify-end w-4/12">
@@ -57,7 +86,23 @@ export default function Page() {
             <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
             <p className="ReadexPro-font text-lg">I&apos;m a Back-end Developer</p>
             <p className="ReadexPro-font text-lg">Locations: Thailand</p>
-            <p className="ReadexPro-font text-lg">I MAKE EASY PROJECTS</p>
+            <motion.div
+              style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+              variants={container}
+              initial="hidden"
+              animate="visible"
+            >
+              {words.map((word, index) => (
+                <motion.span
+                  variants={child}
+                  style={{ marginRight: "5px" }}
+                  key={index}
+                  className="ReadexPro-font"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </motion.div>
             <div className="flex flex-wrap items-center">
               <Link href="https://github.com/FAYStarNext" aria-label="GitHub">
                 <GithubIcon />
@@ -73,12 +118,12 @@ export default function Page() {
           </div>
         </div>
         <div className="fixed bottom-4 right-4">
-            <Button isIconOnly color="warning" variant="faded" aria-label="Take a photo" onClick={scrollDown}>
-              <svg className="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
-              </svg>
-            </Button>
-          </div>
+          <Button isIconOnly color="warning" variant="faded" aria-label="Take a photo" onClick={scrollDown}>
+            <svg className="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+            </svg>
+          </Button>
+        </div>
       </div>
       <section id="skill">
         <div className="flex flex-col items-center justify-center h-screen text-center bg-neutral-800 text-white">
