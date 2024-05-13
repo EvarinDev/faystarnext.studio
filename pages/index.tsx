@@ -82,7 +82,6 @@ export default function Page() {
         <div className="flex flex-col items-center justify-center h-screen text-center">
           <h1 className="text-2xl ReadexPro-font text-inherit">Hello, Everyone</h1>
           <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
-          <p className="ReadexPro-font text-lg">I&apos;m a Back-end Developer</p>
           <p className="ReadexPro-font text-lg">Locations: Thailand</p>
           <motion.div
             style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
