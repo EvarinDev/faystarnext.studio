@@ -79,64 +79,62 @@ export default function Page() {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}>
-        <div className="flex flex-row-reverse h-screen items-center">
-          <div className="justify-end w-4/12">
-            <h1 className="text-2xl ReadexPro-font text-inherit">Hello, Everyone</h1>
-            <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
-            <p className="ReadexPro-font text-lg">I&apos;m a Back-end Developer</p>
-            <p className="ReadexPro-font text-lg">Locations: Thailand</p>
-            <motion.div
-              style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
-              variants={container}
-              initial="hidden"
-              animate="visible"
-            >
-              {words.map((word, index) => (
-                <motion.span
-                  variants={child}
-                  style={{ marginRight: "5px" }}
-                  key={index}
-                  className="ReadexPro-font"
-                >
-                  {word}
-                </motion.span>
+        <div className="flex flex-col items-center justify-center h-screen text-center">
+          <h1 className="text-2xl ReadexPro-font text-inherit">Hello, Everyone</h1>
+          <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
+          <p className="ReadexPro-font text-lg">I&apos;m a Back-end Developer</p>
+          <p className="ReadexPro-font text-lg">Locations: Thailand</p>
+          <motion.div
+            style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+            variants={container}
+            initial="hidden"
+            animate="visible"
+          >
+            {words.map((word, index) => (
+              <motion.span
+                variants={child}
+                style={{ marginRight: "5px" }}
+                key={index}
+                className="ReadexPro-font text-lg"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.div>
+          <div className="flex flex-wrap justify-center items-center">
+            <Link href="https://github.com/FAYStarNext" aria-label="GitHub">
+              <GithubIcon />
+            </Link>
+            <Link href="https://github.com/sponsors/FAYStarNext" aria-label="DONATE ME PLS">
+              <svg className="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z" />
+              </svg>
+            </Link>
+          </div>
+          <div className="fixed bottom-4 right-4">
+            <Button isIconOnly color="warning" variant="faded" aria-label="Take a photo" onClick={scrollDown}>
+              <svg className="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+              </svg>
+            </Button>
+        
+            </div>  </div>
+        </div>
+        <section id="skill">
+          <div className="flex flex-col items-center justify-center h-screen text-center bg-neutral-800 text-white">
+            <h2 className="justify-center text-4xl font-bold">My Skill</h2>
+            <div className="flex flex-wrap justify-center items-center">
+              {skills.map((item) => (
+                <div key={item.title} className="flex flex-col items-center m-2">
+                  <Image src={item.icon} alt={item.title} width={64} height={64} />
+                  <p>{item.title}</p>
+                </div>
               ))}
-            </motion.div>
-            <div className="flex flex-wrap items-center">
-              <Link href="https://github.com/FAYStarNext" aria-label="GitHub">
-                <GithubIcon />
-              </Link>
-              <Link href="https://github.com/sponsors/FAYStarNext" aria-label="DONATE ME PLS">
-                <svg className="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                    d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z" />
-                </svg>
-              </Link>
             </div>
           </div>
-        </div>
-        <div className="fixed bottom-4 right-4">
-          <Button isIconOnly color="warning" variant="faded" aria-label="Take a photo" onClick={scrollDown}>
-            <svg className="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
-            </svg>
-          </Button>
-        </div>
+        </section>
       </div>
-      <section id="skill">
-        <div className="flex flex-col items-center justify-center h-screen text-center bg-neutral-800 text-white">
-          <h2 className="justify-center text-4xl font-bold">My Skill</h2>
-          <div className="flex flex-wrap justify-center items-center">
-            {skills.map((item) => (
-              <div key={item.title} className="flex flex-col items-center m-2">
-                <Image src={item.icon} alt={item.title} width={64} height={64} />
-                <p>{item.title}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+      );
 }
