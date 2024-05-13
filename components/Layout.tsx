@@ -13,7 +13,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <meta property="og:description" content="Hi 👋 My name is FAY" />
                 <meta property="og:url" content="https://faystarnext.studio" />
                 <meta property="og:image" content="https://cdn.faystarnext.studio/backg.png" />
-                <meta property="og:type" content="website" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="🚀 | FAYStarNext" />
                 <meta name="twitter:description" content="🚀 | FAYStarNext" />
