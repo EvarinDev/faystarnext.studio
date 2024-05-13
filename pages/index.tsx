@@ -114,13 +114,13 @@ export default function Page() {
             </Link>
           </div>
           <div className="fixed bottom-4 right-4">
-            <Button isIconOnly color="warning" variant="faded" aria-label="Take a photo" onClick={scrollDown}>
+            <Button isIconOnly color="warning" variant="faded" aria-label="Down" onClick={scrollDown}>
               <svg className="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
               </svg>
             </Button>
-        
-            </div>  </div>
+            </div>
+          </div>
         </div>
         <section id="skill">
           <div className="flex flex-col items-center justify-center h-screen text-center bg-neutral-800 text-white">
