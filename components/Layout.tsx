@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import NextNavbar from "./Navbar";
 import Head from "next/head";
+import { ScrollShadow } from "@nextui-org/react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
@@ -21,7 +22,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <meta name="twitter:image" content="https://cdn.rlss.in.th/assets/img/BackGround.webp" />
             </Head>
             <NextNavbar />
-            <main>{children}</main>
+            <ScrollShadow hideScrollBar>
+                <main>{children}</main>
+            </ScrollShadow>
         </>
     )
 }
