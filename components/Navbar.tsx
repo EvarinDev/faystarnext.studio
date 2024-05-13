@@ -28,7 +28,17 @@ export default function NextNavbar() {
                 isMenuOpen={isMenuOpen}
                 onMenuOpenChange={setIsMenuOpen}>
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">FAY</p>
+                    <div className="flex space-x-4">
+                        <p className="font-bold text-inherit">FAY</p>
+                        <a href="https://webring.wonderful.software#faystarnext.studio" title="วงแหวนเว็บ">
+                            <img
+                                alt="วงแหวนเว็บ"
+                                width="26"
+                                height="26"
+                                src="https://webring.wonderful.software/webring.black.svg"
+                            />
+                        </a>
+                    </div>
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-4 ReadexPro-font" justify="center">
                     {menuItems.map((item, index) => (
@@ -41,7 +51,7 @@ export default function NextNavbar() {
                         </NavbarItem>
                     ))}
                 </NavbarContent>
-                <NavbarContent  className="sm:hidden" justify="end">
+                <NavbarContent className="sm:hidden" justify="end">
                     <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                 </NavbarContent>
                 <NavbarMenu>
