@@ -4,12 +4,9 @@ import * as React from "react";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import Layout from "@/components/Layout";
 import Loading from "@/components/loading";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { asPath } = useRouter();
-
   return (
     <Layout>
       <GoogleAnalytics trackPageViews key="G-BPMPTZD5MZ" gaMeasurementId="G-BPMPTZD5MZ" />

@@ -30,7 +30,7 @@ export default function NextNavbar() {
                 <NavbarBrand>
                     <p className="font-bold text-inherit">FAY</p>
                 </NavbarBrand>
-                <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                <NavbarContent className="hidden sm:flex gap-4 ReadexPro-font" justify="center">
                     {menuItems.map((item, index) => (
                         <NavbarItem key={index}>
                             <Link
@@ -41,7 +41,7 @@ export default function NextNavbar() {
                         </NavbarItem>
                     ))}
                 </NavbarContent>
-                <NavbarContent className="sm:hidden" justify="end">
+                <NavbarContent  className="sm:hidden" justify="end">
                     <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                 </NavbarContent>
                 <NavbarMenu>
