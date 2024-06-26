@@ -30,7 +30,7 @@ export default function Page() {
       title: "Linux",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
     }
-  ]
+  ];
 
   const scrollDown = () => {
     const skillElement = document.getElementById("skill");
@@ -41,6 +41,7 @@ export default function Page() {
       });
     }
   };
+
   const words = "I MAKE EASY PROJECTS".split(" ");
 
   const container = {
@@ -50,6 +51,7 @@ export default function Page() {
       transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
     }),
   };
+
   const child = {
     visible: {
       opacity: 1,
@@ -109,7 +111,7 @@ export default function Page() {
           </div>
           <div className="fixed bottom-4 right-4">
             <Button isIconOnly color="warning" variant="faded" aria-label="Down" onClick={scrollDown}>
-              <svg className="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7" />
               </svg>
             </Button>
@@ -122,7 +124,15 @@ export default function Page() {
           <div className="flex flex-wrap justify-center items-center">
             {skills.map((item) => (
               <div key={item.title} className="flex flex-col items-center m-2">
-                <Image src={item.icon} alt={item.title} width={64} height={64} fetchPriority="high" />
+                <Image 
+                  src={item.icon} 
+                  alt={item.title} 
+                  width={64} 
+                  height={64} 
+                  priority={true} // use priority for important images
+                  quality={80} // set image quality
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // responsive sizes
+                />
                 <p>{item.title}</p>
               </div>
             ))}
