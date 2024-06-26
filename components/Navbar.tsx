@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function NextNavbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -27,7 +28,7 @@ export default function NextNavbar() {
                     <div className="flex space-x-4">
                         <p className="font-bold text-inherit">FAY</p>
                         <a href="https://webring.wonderful.software#faystarnext.studio" title="วงแหวนเว็บ">
-                            <img
+                            <Image
                                 alt="วงแหวนเว็บ"
                                 width="26"
                                 height="26"
