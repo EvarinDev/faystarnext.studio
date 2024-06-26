@@ -75,12 +75,7 @@ export default function Page() {
 
   return (
     <div>
-      <div className="bg-white text-white" style={{
-        background: `linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/20230806_151743.jpg)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}>
+      <div className="bg-white text-white hero-section">
         <div className="flex flex-col items-center justify-center h-screen text-center">
           <h1 className="text-2xl ReadexPro-font text-inherit">Hello, Everyone</h1>
           <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
@@ -139,6 +134,15 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <style jsx>{`
+        .hero-section {
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                      url('https://cdn.faystarnext.studio/20230806_151743.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      `}</style>
     </div>
   );
 }
