@@ -75,7 +75,12 @@ export default function Page() {
 
   return (
     <div>
-      <div className="bg-white text-white hero-section">
+      <div className="bg-white text-white" style={{
+        background: `linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/20230806_151743.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}>
         <div className="flex flex-col items-center justify-center h-screen text-center">
           <h1 className="text-2xl ReadexPro-font text-inherit">Hello, Everyone</h1>
           <p className="ReadexPro-font text-lg">Hi 👋 My name is Fay</p>
@@ -119,11 +124,11 @@ export default function Page() {
           <div className="flex flex-wrap justify-center items-center">
             {skills.map((item) => (
               <div key={item.title} className="flex flex-col items-center m-2">
-                <Image 
-                  src={item.icon} 
-                  alt={item.title} 
-                  width={64} 
-                  height={64} 
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={64}
+                  height={64}
                   priority={true} // use priority for important images
                   quality={80} // set image quality
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // responsive sizes
@@ -134,15 +139,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <style jsx>{`
-        .hero-section {
-          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                      url('https://cdn.faystarnext.studio/20230806_151743.jpg');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-      `}</style>
     </div>
   );
 }
