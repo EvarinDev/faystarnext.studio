@@ -75,7 +75,7 @@ export default function Page() {
 
   return (
     <div>
-       <div className="bg-white text-white" style={{
+      <div className="bg-white text-white" style={{
         background: `linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), url(https://cdn.faystarnext.studio/20230806_151743.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -124,11 +124,11 @@ export default function Page() {
           <div className="flex flex-wrap justify-center items-center">
             {skills.map((item) => (
               <div key={item.title} className="flex flex-col items-center m-2">
-                <Image 
-                  src={item.icon} 
-                  alt={item.title} 
-                  width={64} 
-                  height={64} 
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={64}
+                  height={64}
                   priority={true} // use priority for important images
                   quality={80} // set image quality
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // responsive sizes
