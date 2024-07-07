@@ -9,11 +9,9 @@
 # testing
 /coverage
 
-bun.lockb
 # next.js
 /.next/
 /out/
-package-lock.json
 
 # production
 /build

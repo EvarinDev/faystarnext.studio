@@ -1,8 +1,17 @@
-/** @type {import('next').NextConfig} */
+import withTM from 'next-transpile-modules';
+
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.faystarnext.studio',
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+export default withTM(['gsap'])(nextConfig);

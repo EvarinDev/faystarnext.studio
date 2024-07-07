@@ -1,7 +1,8 @@
 {
   "name": "faystarnext.studio",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,28 +10,36 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.3.6",
-    "@types/ws": "^8.5.10",
-    "axios": "^1.7.2",
-    "flowbite": "^2.3.0",
-    "flowbite-react": "^0.9.0",
-    "framer-motion": "^11.1.7",
-    "next": "14.2.3",
+    "@motionone/utils": "^10.18.0",
+    "@next/third-parties": "^14.2.4",
+    "@react-spring/web": "^9.7.3",
+    "@react-three/drei": "^9.108.3",
+    "@react-three/fiber": "^8.16.8",
+    "@studio-freight/lenis": "^1.0.42",
+    "@types/locomotive-scroll": "^4.1.3",
+    "antd": "^5.19.1",
+    "framer-motion": "^11.2.13",
+    "framer-motion-3d": "^11.2.13",
+    "gsap": "^3.12.2",
+    "lenis": "^1.1.6",
+    "locomotive-scroll": "^4.1.4",
+    "next": "^14.2.4",
+    "next-transpile-modules": "^10.0.1",
     "nextjs-google-analytics": "^2.3.3",
     "react": "^18",
     "react-dom": "^18",
-    "socket.io-client": "^4.7.5",
-    "ws": "^8.17.0"
+    "react-intersection-observer": "^9.10.3",
+    "react-responsive": "^10.0.0",
+    "sass": "^1.77.6"
   },
-  "license": "MIT",
   "devDependencies": {
+    "@types/gsap": "^3.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3",
+    "eslint-config-next": "14.2.4",
     "postcss": "^8",
-    "sass": "^1.75.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
