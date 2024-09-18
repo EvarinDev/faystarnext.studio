@@ -23,7 +23,7 @@
     "gsap": "^3.12.2",
     "lenis": "^1.1.6",
     "locomotive-scroll": "^4.1.4",
-    "next": "^14.2.4",
+    "next": "^14.2.12",
     "next-transpile-modules": "^10.0.1",
     "nextjs-google-analytics": "^2.3.3",
     "react": "^18",
